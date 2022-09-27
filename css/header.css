@@ -1,0 +1,111 @@
+.header {
+  background: url("../img/main-bg.jpg") 100% 100%/cover no-repeat;
+  padding: 0 0 225px 0;
+}
+
+.header .header__top-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 16px 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 128px;
+}
+
+.header__bottom-block {
+  max-width: 460px;
+}
+
+.header__title {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 1.3;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.header__subtitle {
+  margin-bottom: 25px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+  color: #ffffff;
+}
+
+.header__button {
+  display: inline-block;
+  background: #961914;
+  border-radius: 8px;
+  padding: 13px 42px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.header__button:hover {
+  background: #7a120e;
+  -webkit-transition: all 0.4s ease 0;
+  -o-transition: all 0.4s ease 0;
+  transition: all 0.4s ease 0;
+}
+
+.menu-nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Montserrat";
+  gap: 53px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu-nav__link a {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.menu-nav__link {
+  display: inline-block;
+  position: relative;
+}
+
+.menu-nav__link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  -webkit-transform: scaleX(0);
+      -ms-transform: scaleX(0);
+          transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #961914;
+  -webkit-transform-origin: bottom right;
+      -ms-transform-origin: bottom right;
+          transform-origin: bottom right;
+  -webkit-transition: -webkit-transform 0.25s ease-out;
+  transition: -webkit-transform 0.25s ease-out;
+  -o-transition: transform 0.25s ease-out;
+  transition: transform 0.25s ease-out;
+  transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
+}
+
+.menu-nav__link:hover::after {
+  -webkit-transform: scaleX(1);
+      -ms-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: bottom left;
+      -ms-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
