@@ -121,15 +121,20 @@
 .main .food {
   background-color: #ead1d0;
   padding: 32px 80px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .main .food__adults {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 75px;
+}
+
+.main .food__puppies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 75px;
 }
 
 .main .food__title {
@@ -139,6 +144,16 @@
   line-height: 200%;
   text-transform: uppercase;
   color: #000000;
+}
+
+.main .food__items-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .main .food__item {
@@ -239,10 +254,4 @@
   height: 14px;
   top: 2px;
   left: -14px;
-}
-
-.main .food__puppies {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }

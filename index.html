@@ -83,8 +83,8 @@
           </div>
           <!-- наименование позоций еды для собак -->
           <div class="main__food-block food">
-            <p class="food__title">Для взрослых</p>
             <div class="food__adults">
+              <div class="food__title">Для взрослых</div>
               <ul class="food__items-left">
                 <li class="food__item item-1">Мясо – 70%</li>
                 <li class="food__item item-2">Кости – 10%</li>
@@ -97,10 +97,10 @@
                 <li class="food__item item-7">Фрукты – 1%</li>
               </ul>
             </div>
-            <p class="food__title">Для щенков</p>
             <div class="food__puppies">
+              <div class="food__title">Для щенков</div>
               <ul class="food__items-left">
-                <li class="food__item item-1">Мясо – 70%</li>
+                <li class="food__item item-1">Мясо – 58%</li>
                 <li class="food__item item-2">Кости – 10%</li>
                 <li class="food__item item-3">Овощи – 7%</li>
                 <li class="food__item item-4">Печень – 5%</li>
@@ -117,7 +117,53 @@
       <!-- секцция контакты и форма заполнения -->
       <section class="section">
         <div class="section__container">
-          <h2 class="section__title">Контакты</h2>
+          <div class="section__contacts">
+            <h2 class="section__title">Контакты</h2>
+          </div>
+          <div class="section__forms">
+            <div class="section__questions">
+              <p class="section__title-form">Остались вопросы?</p>
+              <p class="section__subtitle-form">
+                Напишите нам и мы обязательно подробно на них ответим.
+              </p>
+            </div>
+            <form action="#" class="section__form">
+              <div class="section__input-block">
+                <input
+                  class="section__input"
+                  required
+                  type="text"
+                  placeholder="Имя"
+                />
+                <input
+                  class="section__input"
+                  required
+                  type="text"
+                  placeholder="Email"
+                />
+              </div>
+              <textarea
+                class="section__textarea"
+                id="textarea"
+                cols="50"
+                rows="10"
+                aria-disabled="false"
+                style="resize: none"
+                placeholder="Ваш вопрос..."
+              ></textarea>
+              <div class="section__items">
+                <div class="section__block-data">
+                  <input type="checkbox" id="checkbox" />
+                  <p class="section__text-checkbox">
+                    Даю согласие на обработку персональных данных
+                  </p>
+                </div>
+                <button class="section__button _btn" type="submit">
+                  Отправить
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       </section>
       <!-- footer -->

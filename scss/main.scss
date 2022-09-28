@@ -104,18 +104,25 @@
       object-fit: cover;
     }
   }
-  //блок с наименованием позоций еды для собак
+
+  //------блок с наименованием позоций еды для собак----
   .food {
     // .food__adults
     background-color: #ead1d0;
     padding: 32px 80px;
-    display: flex;
+    //display: flex;
+    //justify-content: space-between;
     &__adults {
       display: flex;
+      gap: 75px;
+    }
+    // .food__puppies
+    &__puppies {
+      display: flex;
+      gap: 75px;
     }
 
     // .food__title
-
     &__title {
       font-family: "Montserrat";
       font-weight: 600;
@@ -126,14 +133,14 @@
     }
 
     // .food__items
-
     &__items-left {
+      display: flex;
+      flex-direction: column;
     }
     &__items-right {
     }
 
     // .food__item
-
     &__item {
       font-family: "Montserrat";
       font-weight: 500;
@@ -143,7 +150,7 @@
       padding-left: 14px;
     }
 
-    //icons
+    //----icons наименование позоций еды для собак------
     .item-1 {
       position: relative;
       &::before {
@@ -220,10 +227,6 @@
         top: 2px;
         left: -14px;
       }
-    }
-    // .food__puppies
-    &__puppies {
-      display: flex;
     }
   }
 }

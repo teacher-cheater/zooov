@@ -1,0 +1,115 @@
+.section {
+  background-color: #961914;
+  // .section__container
+  &__container {
+    display: flex;
+    gap: 180px;
+  }
+
+  // .section__contacts
+  &__contacts {
+    padding: 60px 0;
+  }
+
+  // .section__title
+  &__title {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 130%;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+  }
+
+  // .section__forms
+  &__forms {
+    padding: 80px 0;
+  }
+
+  // .section__questions
+  &__questions {
+    margin-bottom: 35px;
+  }
+
+  &__title-form {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    color: #ffffff;
+  }
+
+  // .section__subtitle
+  &__subtitle-form {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #ffffff;
+  }
+
+  // .section__form
+  &__form {
+  }
+
+  // .section__input-block
+  &__input-block {
+    display: flex;
+    gap: 24px;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 22px 15px 6px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    margin-bottom: 16px;
+    font-size: 20px;
+    color: #ffffff;
+  }
+
+  // .section__textarea
+  &__textarea {
+    width: 100%;
+    padding: 8px 15px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    margin-bottom: 22px;
+    color: #ffffff;
+    font-size: 24px;
+  }
+
+  // .section__items
+  &__items {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__block-data {
+    display: flex;
+    gap: 10px;
+  }
+
+  // .section__text-checkbox
+  &__text-checkbox {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+    color: #ffffff;
+    max-width: 230px;
+  }
+
+  &__button {
+    display: flex;
+    background: #fff4f3;
+    color: #ec7973;
+  }
+}
+#checkbox {
+  display: flex;
+  align-self: start;
+}
