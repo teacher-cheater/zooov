@@ -1,6 +1,6 @@
-const menuLinks = document.querySelectorAll(".menu-nav__link[data-goto]");
-const menuBody = document.querySelector('.header__menu');
-const iconMenu = document.querySelector('.header__burger');
+const menuLinks = document.querySelectorAll(".menu__link[data-goto]");
+const menuBody = document.querySelector('.menu__body');
+const iconMenu = document.querySelector('.menu__icon');
 
 if (iconMenu) {
   iconMenu.addEventListener('click', () => {

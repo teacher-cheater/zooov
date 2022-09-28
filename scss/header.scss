@@ -2,60 +2,12 @@
   // .header__container
   background: url("../img/main-bg.jpg") center / cover no-repeat;
   padding: 0 0 225px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5;
   &__container {
-  }
-  &__burger {
-    display: none;
-    @media (max-width: 767.98px) {
-      position: fixed;
-      top: 45px;
-      right: 25px;
-      display: block;
-      width: 45px;
-      height: 3.84px;
-      z-index: 5;
-      &::before,
-      &::after {
-        content: "";
-        background-color: #fff;
-        position: absolute;
-        width: 100%;
-        height: 3px;
-      }
-      &::before {
-        top: 10px;
-      }
-      &::after {
-        bottom: 10px;
-      }
-      span {
-        position: absolute;
-        background-color: #fff;
-        width: 100%;
-        left: 0;
-        height: 3px;
-        top: 9px;
-      }
-
-      & span {
-        top: 50%;
-        transform: scale(1) translate(0px, -50%);
-      }
-
-      &._active span {
-        transform: scale(0) translate(0px, -50%);
-      }
-
-      &._active::before {
-        top: 50%;
-        transform: rotate(45deg) translate(0px, -50%);
-      }
-
-      &._active::after {
-        top: 50%;
-        transform: rotate(-45deg) translate(0px, -50%);
-      }
-    }
   }
 
   .header__top-block {
@@ -64,12 +16,11 @@
     padding: 16px 0;
     justify-content: space-between;
     margin-bottom: 128px;
-    //position: fixed;
-    //background-color: #fff;
   }
 
   // .header__logo
   &__logo {
+    z-index: 5;
   }
 
   // .header__menu
@@ -103,7 +54,6 @@
   }
 
   // .header__subtitle
-
   &__subtitle {
     margin-bottom: 25px;
     font-family: "Montserrat";
@@ -121,27 +71,17 @@
 
   // .header__button
   &__button {
-    display: inline-block;
-    background: #961914;
-    border-radius: 8px;
-    padding: 13px 42px;
-    text-align: center;
-    color: #ffffff;
-    &:hover {
-      background: #7a120e;
-      transition: all 0.4s ease 0;
-    }
   }
 }
 
-.menu-nav {
-  // .menu-nav__list
-
+.menu {
   &__list {
     display: flex;
     gap: 53px;
     @media (max-width: 767.98px) {
-      display: none;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
     }
   }
 
@@ -172,6 +112,10 @@
     &:hover::after {
       transform: scaleX(1);
       transform-origin: bottom left;
+    }
+    @media (max-width: 767.98px) {
+      font-size: 28px;
+      color: #000;
     }
   }
 }
