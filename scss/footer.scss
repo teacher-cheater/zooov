@@ -1,0 +1,27 @@
+.footer {
+  background-color: #69120e;
+  padding: 25px 0;
+  // .footer__container
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 55px;
+    @media (max-width: 767.98px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  // .footer__text
+  &__text {
+    display: flex;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+    color: #ffffff;
+    opacity: 0.4;
+  }
+}
