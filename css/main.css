@@ -2,11 +2,35 @@
   padding: 180px 0 30px;
 }
 
-.main__container {
+.main__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 30px;
+  margin-bottom: 80px;
+}
+
+@media (max-width: 991.98px) {
+  .main__content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .main__content {
+    margin-bottom: 0;
+  }
+}
+
+.main__content-left {
+  padding-right: 20px;
+}
+
+@media (max-width: 991.98px) {
+  .main__content-left {
+    margin-bottom: 30px;
+  }
 }
 
 .main__title {
@@ -65,9 +89,160 @@
   border-radius: 50%;
 }
 
+.main__content-right {
+  max-width: 585px;
+}
+
+@media (max-width: 1140px) {
+  .main__content-right {
+    width: 100%;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .main__content-right {
+    width: 100%;
+  }
+}
+
 .main__image {
-  width: 583px;
-  height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 991.98px) {
+  .main__image {
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+.main .food {
+  background-color: #ead1d0;
+  padding: 32px 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .food__adults {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .food__title {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 200%;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.main .food__item {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 250%;
+  color: #434242;
+  padding-left: 14px;
+}
+
+.main .food .item-1 {
+  position: relative;
+}
+
+.main .food .item-1::before {
+  position: absolute;
+  content: url("../img/meal/steak.svg");
+  width: 20px;
+  height: 14px;
+  top: 2px;
+  left: -12px;
+}
+
+.main .food .item-2 {
+  position: relative;
+}
+
+.main .food .item-2::before {
+  position: absolute;
+  content: url("../img/meal/bone.svg");
+  width: 20px;
+  height: 14px;
+  top: 2px;
+  left: -12px;
+}
+
+.main .food .item-3 {
+  position: relative;
+}
+
+.main .food .item-3::before {
+  position: absolute;
+  content: url("../img/meal/vegetables.svg");
+  width: 20px;
+  height: 14px;
+  top: 2px;
+  left: -12px;
+}
+
+.main .food .item-4 {
+  position: relative;
+}
+
+.main .food .item-4::before {
+  position: absolute;
+  content: url("../img/meal/liver.svg");
+  width: 20px;
+  height: 14px;
+  top: 2px;
+  left: -12px;
+}
+
+.main .food .item-5 {
+  position: relative;
+}
+
+.main .food .item-5::before {
+  position: absolute;
+  content: url("../img/meal/offal.svg");
+  width: 20px;
+  height: 14px;
+  top: 2px;
+  left: -12px;
+}
+
+.main .food .item-6 {
+  position: relative;
+}
+
+.main .food .item-6::before {
+  position: absolute;
+  content: url("../img/meal/nuts.svg");
+  width: 20px;
+  height: 14px;
+  top: 2px;
+  left: -12px;
+}
+
+.main .food .item-7 {
+  position: relative;
+}
+
+.main .food .item-7::before {
+  position: absolute;
+  content: url("../img/meal/fruit.svg");
+  width: 20px;
+  height: 14px;
+  top: 2px;
+  left: -14px;
+}
+
+.main .food__puppies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
