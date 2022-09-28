@@ -9,7 +9,7 @@
 
 ._btn:hover {
   background: #7a120e;
-  -webkit-transition: all 0.4s ease 0;
-  -o-transition: all 0.4s ease 0;
-  transition: all 0.4s ease 0;
+  -webkit-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
 }

@@ -5,20 +5,33 @@
     display: flex;
     gap: 180px;
   }
+  // .section__contacts
+  &__contacts {
+  }
+
+  // .section__forms
+
+  &__forms {
+  }
+
+  // .section__questions
+
+  &__questions {
+  }
+
+  // .section__title-form
+
+  &__title-form {
+  }
+
+  // .section__subtitle-form
+
+  &__subtitle-form {
+  }
 
   // .section__contacts
   &__contacts {
     padding: 60px 0;
-  }
-
-  // .section__title
-  &__title {
-    font-family: "Roboto";
-    font-weight: 700;
-    font-size: 46px;
-    line-height: 130%;
-    letter-spacing: 0.02em;
-    color: #ffffff;
   }
 
   // .section__forms
@@ -107,6 +120,101 @@
     display: flex;
     background: #fff4f3;
     color: #ec7973;
+    &:hover {
+      background-color: #ec7973;
+      color: #ffffff;
+    }
+  }
+}
+.contact {
+  font-family: "Montserrat";
+  font-style: normal;
+  color: #ffffff;
+  max-width: 310px;
+  // .contact__title
+  &__title {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 130%;
+    letter-spacing: 0.02em;
+  }
+
+  // .contact__text
+  &__text {
+    font-size: 16px;
+    line-height: 140%;
+    font-weight: 400;
+    margin-bottom: 32px;
+  }
+  &__inst {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+  // .contact__number
+  &__number {
+    display: block;
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140%;
+    margin-bottom: 24px;
+    color: #ffffff;
+    margin-bottom: 24px;
+  }
+
+  // .contact__social
+  &__social {
+    margin-bottom: 40px;
+  }
+
+  // .contact__whtsp
+  &__whtsp {
+    display: flex;
+    position: relative;
+    max-width: 260px;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
+    padding: 10px 16px 10px 44px;
+    cursor: pointer;
+    margin-bottom: 16px;
+    &:hover {
+      background-color: #ec7973;
+      transition: all 0.3s ease 0s;
+    }
+    &::before {
+      content: url("../img/social/whatsapp.svg");
+      top: 5px;
+      left: 10px;
+      width: 24px;
+      height: 24px;
+      position: absolute;
+    }
+  }
+
+  // .contact__tlgr
+  &__tlgr {
+    display: flex;
+    position: relative;
+    max-width: 260px;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
+    padding: 10px 16px 10px 44px;
+    cursor: pointer;
+    &:hover {
+      background-color: #ec7973;
+      transition: all 0.3s ease 0s;
+    }
+    &::before {
+      content: url("../img/social/telegram.svg");
+      top: 5px;
+      left: 10px;
+      width: 24px;
+      height: 24px;
+      position: absolute;
+    }
   }
 }
 #checkbox {
