@@ -36,6 +36,3 @@ if (menuLinks.length > 0) {
     }
   }
 }
-
-//инициализация сладйера
-//new Swiper('.food');

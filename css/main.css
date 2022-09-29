@@ -1,5 +1,5 @@
 .main {
-  padding: 180px 0 30px;
+  padding: 80px 0;
 }
 
 .main__content {
@@ -101,7 +101,7 @@
 
 @media (max-width: 991.98px) {
   .main__content-right {
-    width: 100%;
+    max-width: 100%;
   }
 }
 

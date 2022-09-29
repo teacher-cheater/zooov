@@ -1,14 +1,7 @@
 .section-sets {
   background-color: #fff4f3;
   padding: 70px 0;
-
-  // .section-sets__container
-  &__container {
-  }
-
-  // .section-sets__trial-sets
-  &__trial-sets {
-  }
+  margin-bottom: 40px;
 }
 .sets {
   // .sets__headlines
@@ -16,6 +9,10 @@
     display: flex;
     gap: 50px;
     margin-bottom: 40px;
+    @media (max-width: 767.98px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
   }
 
   // .sets__title
@@ -27,8 +24,11 @@
     letter-spacing: 0.02em;
     color: #000000;
     & span {
-      background: url("../img/sets/ellipse.png") 280px 100% / contain no-repeat;
+      background: url("../img/sets/ellipse.png") 0 100% / contain no-repeat;
       display: inline-block;
+    }
+    @media (max-width: 767.98px) {
+      font-size: 26px;
     }
   }
 
@@ -58,7 +58,6 @@
     padding: 0 12px;
     flex: 1 1 25%;
     min-width: 300px;
-    //display: flex;
     height: 100%;
   }
 
@@ -69,6 +68,9 @@
 
   // .sets__image
   &__image {
+    @media (max-width: 767.98px) {
+      width: 100%;
+    }
   }
 
   // .sets__block
@@ -78,6 +80,9 @@
 
   // .sets__button
   &__button {
+    @media (max-width: 767.98px) {
+      width: 100%;
+    }
   }
 }
 
@@ -119,5 +124,66 @@
     font-size: 16px;
     line-height: 130%;
     margin-bottom: 15px;
+  }
+}
+//--------
+.card-price {
+  background-color: #ead1d0;
+  padding: 35px 25px 267px 25px;
+  // .card-price__block
+  &__block {
+    position: relative;
+  }
+
+  &__apple {
+    position: absolute;
+    bottom: -280px;
+    left: 20px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    background: url("../img/decor/apple.png") 0 0 / contain no-repeat;
+    width: 90px;
+    height: 90px;
+    z-index: 3;
+  }
+
+  &__meal {
+    background: url("../img/decor/meal.png") 100% 0 / contain no-repeat;
+    position: absolute;
+    top: 250px;
+    left: 120px;
+    width: 120px;
+    height: 150px;
+    z-index: 3;
+    transform: rotate(70deg);
+  }
+
+  &__line {
+    background: url("../img/sets/line.svg") 100% 0 / contain no-repeat;
+    position: absolute;
+    top: 295px;
+    right: -200px;
+    width: 320px;
+    height: 250px;
+    z-index: 3;
+    transform: rotate(180deg);
+  }
+
+  // .card-price__title
+  &__title {
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    color: #000000;
+    margin-bottom: 42px;
+  }
+
+  // .card-price__button
+  &__button {
+    background: #961914;
+    @media (max-width: 767.98px) {
+      width: 100%;
+    }
   }
 }
