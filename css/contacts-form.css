@@ -151,8 +151,8 @@
 }
 
 .section__button:hover {
-  background-color: #ec7973;
-  color: #ffffff;
+  background-color: #ead1d0;
+  color: #961914;
 }
 
 @media (max-width: 767.98px) {

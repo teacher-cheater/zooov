@@ -1,0 +1,123 @@
+.section-sets {
+  background-color: #fff4f3;
+  padding: 70px 0;
+
+  // .section-sets__container
+  &__container {
+  }
+
+  // .section-sets__trial-sets
+  &__trial-sets {
+  }
+}
+.sets {
+  // .sets__headlines
+  &__headlines {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 40px;
+  }
+
+  // .sets__title
+  &__title {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 130%;
+    letter-spacing: 0.02em;
+    color: #000000;
+    & span {
+      background: url("../img/sets/ellipse.png") 280px 100% / contain no-repeat;
+      display: inline-block;
+    }
+  }
+
+  // .sets__subtitle
+  &__subtitle {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #000000;
+    max-width: 580px;
+  }
+
+  // .sets__content
+  &__content {
+    display: flex;
+    row-gap: 24px;
+    margin: 0 -12px;
+    flex-wrap: wrap;
+    &:not(:last-child) {
+      margin: 0 0 66px 0;
+    }
+  }
+
+  // .sets__card
+  &__card {
+    padding: 0 12px;
+    flex: 1 1 25%;
+    min-width: 300px;
+    //display: flex;
+    height: 100%;
+  }
+
+  // .sets__picture
+  &__picture {
+    margin-bottom: 24px;
+  }
+
+  // .sets__image
+  &__image {
+  }
+
+  // .sets__block
+  &__block {
+    flex: 1 1 auto;
+  }
+
+  // .sets__button
+  &__button {
+  }
+}
+
+.block-set {
+  // .block-set__title
+  color: #000000;
+  &__title {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 130%;
+    margin-bottom: 8px;
+  }
+
+  // .block-set__subtitle
+  &__subtitle {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #434242;
+    margin-bottom: 5px;
+  }
+
+  // .block-set__text
+  &__text {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 130%;
+    color: #9f9e9d;
+    margin-bottom: 10px;
+  }
+
+  // .block-set__price
+  &__price {
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 130%;
+    margin-bottom: 15px;
+  }
+}

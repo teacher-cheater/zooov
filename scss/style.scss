@@ -6,6 +6,7 @@
 @import "contacts-form.scss";
 @import "checkbox.scss";
 @import "icons-decor.scss";
+@import "section-set.scss";
 @import "footer.scss";
 
 @import url("https://fonts.googleapis.com/css?family=Montserrat:regular,500,600&display=swap");
@@ -28,7 +29,7 @@ body {
 }
 
 [class*="__container"] {
-  max-width: 1250px;
+  max-width: 1230px;
   margin: 0px auto;
   padding: 0px 15px;
 }

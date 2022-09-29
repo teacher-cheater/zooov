@@ -141,8 +141,8 @@
     color: #ec7973;
     text-align: center;
     &:hover {
-      background-color: #ec7973;
-      color: #ffffff;
+      background-color: #ead1d0;
+      color: #961914;
     }
     @media (max-width: 767.98px) {
       width: 100%;
@@ -153,10 +153,10 @@
   font-family: "Montserrat";
   font-style: normal;
   color: #ffffff;
-  //max-width: 310px;
   @media (max-width: 1140px) {
     width: 100%;
   }
+
   // .contact__title
   &__title {
     font-family: "Roboto";
@@ -173,10 +173,12 @@
     font-weight: 400;
     margin-bottom: 32px;
   }
+
   &__inst {
     color: #ffffff;
     text-decoration: underline;
   }
+
   // .contact__number
   &__number {
     display: block;
@@ -243,6 +245,7 @@
     }
   }
 }
+
 #checkbox {
   display: flex;
   align-self: start;

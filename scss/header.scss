@@ -4,13 +4,10 @@
   padding: 225px 0;
   z-index: 5;
 
-  &__container {
-  }
-
   .header__top-block {
     display: flex;
     flex-wrap: wrap;
-    padding: 16px 0;
+    padding: 16px 15px;
     justify-content: space-between;
     top: 0;
     width: 100%;
@@ -31,10 +28,6 @@
   // .header__bottom-block
   &__bottom-block {
     max-width: 460px;
-  }
-
-  // .header__content
-  &__content {
   }
 
   // .header__title
@@ -72,10 +65,6 @@
       line-height: 140%;
       margin-bottom: 48px;
     }
-  }
-
-  // .header__button
-  &__button {
   }
 }
 

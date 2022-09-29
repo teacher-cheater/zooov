@@ -1,51 +1,7 @@
-.header {
-  position: relative;
-  // .header__icons-decor
-  &__icons-decor {
-  }
-
-  // .header__icon-1
-
-  //&__icon-1 {
-  //  background: url("../img/decor/ellipse.svg") 0 0 / contain no-repeat;
-  //  position: absolute;
-  //  top: 35%;
-  //  left: 35%;
-  //  width: 270px;
-  //  height: 95px;
-  //  transform: matrix(1, 0.09, -0.09, 1, 0, 0);
-  //  @media (max-width: 767.98px) {
-  //    top: 14%;
-  //    left: 70%;
-  //    width: 100px;
-  //    height: 100px;
-  //  }
-  //}
-
-  // .header__icon-2
-
-  //&__icon-2 {
-  //  background: url("../img/decor/zooov.svg") 0 0 / contain no-repeat;
-  //  position: absolute;
-  //  color: #fff;
-  //  top: 20%;
-  //  right: 1%;
-  //  width: 548px;
-  //  height: 168px;
-  //  transform: rotate(-90deg);
-  //  @media (max-width: 767.98px) {
-  //    top: 20%;
-  //    right: 1%;
-  //  }
-  //}
-}
-
 //--------------
 .section {
   position: relative;
   // .section__icons
-  &__icons {
-  }
 }
 .decor {
   // .decor__icon-1
