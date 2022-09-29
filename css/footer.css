@@ -21,6 +21,7 @@
   .footer__container {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    gap: 15px;
   }
 }
 

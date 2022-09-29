@@ -11,33 +11,32 @@
     @media (max-width: 991.98px) {
     }
   }
-  // .section__contacts
-  &__contacts {
-  }
 
   // .section__forms
-
   &__forms {
   }
 
   // .section__questions
-
   &__questions {
   }
 
   // .section__title-form
-
   &__title-form {
   }
 
   // .section__subtitle-form
-
   &__subtitle-form {
   }
 
   // .section__contacts
   &__contacts {
     padding: 60px 0;
+    @media (max-width: 1140px) {
+      padding: 40px 0 10px;
+    }
+    @media (max-width: 767.98px) {
+      padding: 30px 0 10px;
+    }
   }
 
   // .section__forms
@@ -80,6 +79,10 @@
   &__input-block {
     display: flex;
     gap: 24px;
+    @media (max-width: 767.98px) {
+      flex-wrap: wrap;
+      gap: 5px;
+    }
   }
 
   &__input {
@@ -109,6 +112,10 @@
   &__items {
     display: flex;
     justify-content: space-between;
+    gap: 10px;
+    @media (max-width: 767.98px) {
+      flex-wrap: wrap;
+    }
   }
 
   &__block-data {
@@ -124,15 +131,21 @@
     line-height: 140%;
     color: #ffffff;
     max-width: 230px;
+    @media (max-width: 767.98px) {
+      max-width: 100%;
+    }
   }
 
   &__button {
-    display: flex;
     background: #fff4f3;
     color: #ec7973;
+    text-align: center;
     &:hover {
       background-color: #ec7973;
       color: #ffffff;
+    }
+    @media (max-width: 767.98px) {
+      width: 100%;
     }
   }
 }
@@ -140,7 +153,7 @@
   font-family: "Montserrat";
   font-style: normal;
   color: #ffffff;
-  max-width: 310px;
+  //max-width: 310px;
   @media (max-width: 1140px) {
     width: 100%;
   }

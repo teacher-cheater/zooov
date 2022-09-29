@@ -81,37 +81,45 @@
               />
             </div>
           </div>
-          <!-- наименование позоций еды для собак -->
+          <!-- наименование позиций еды для собак -->
           <div class="main__food-block food">
-            <div class="food__adults">
-              <div class="food__title">Для взрослых</div>
-              <ul class="food__items-left">
-                <li class="food__item item-1">Мясо – 70%</li>
-                <li class="food__item item-2">Кости – 10%</li>
-                <li class="food__item item-3">Овощи – 7%</li>
-                <li class="food__item item-4">Печень – 5%</li>
-              </ul>
-              <ul class="food__items-right">
-                <li class="food__item item-5">Субпродукты – 5%</li>
-                <li class="food__item item-6">Семена/Орехи – 2%</li>
-                <li class="food__item item-7">Фрукты – 1%</li>
-              </ul>
+            <!-- adults dogs -->
+            <div class="food__block-eat">
+              <div class="food__title-adults">Для взрослых</div>
+              <div class="food__adults">
+                <ul class="food__items-left">
+                  <li class="food__item item-1">Мясо – 70%</li>
+                  <li class="food__item item-2">Кости – 10%</li>
+                  <li class="food__item item-3">Овощи – 7%</li>
+                  <li class="food__item item-4">Печень – 5%</li>
+                </ul>
+                <ul class="food__items-right">
+                  <li class="food__item item-5">Субпродукты – 5%</li>
+                  <li class="food__item item-6">Семена/Орехи – 2%</li>
+                  <li class="food__item item-7">Фрукты – 1%</li>
+                </ul>
+              </div>
             </div>
-            <div class="food__puppies">
-              <div class="food__title">Для щенков</div>
-              <ul class="food__items-left">
-                <li class="food__item item-1">Мясо – 58%</li>
-                <li class="food__item item-2">Кости – 10%</li>
-                <li class="food__item item-3">Овощи – 7%</li>
-                <li class="food__item item-4">Печень – 5%</li>
-              </ul>
-              <ul class="food__items-right">
-                <li class="food__item item-5">Субпродукты – 5%</li>
-                <li class="food__item item-6">Семена/Орехи – 2%</li>
-                <li class="food__item item-7">Фрукты – 1%</li>
-              </ul>
+            <!-- pupies -->
+            <div class="food__block-eat">
+              <div class="food__title-pupies">Для щенков</div>
+              <div class="food__puppies">
+                <ul class="food__items-left">
+                  <li class="food__item item-1">Мясо – 58%</li>
+                  <li class="food__item item-2">Кости – 17%</li>
+                  <li class="food__item item-3">Овощи – 7%</li>
+                  <li class="food__item item-4">Печень – 7%</li>
+                </ul>
+                <ul class="food__items-right">
+                  <li class="food__item item-5">Субпродукты – 7%</li>
+                  <li class="food__item item-6">Семена/Орехи – 3%</li>
+                  <li class="food__item item-7">Фрукты – 1%</li>
+                </ul>
+              </div>
             </div>
           </div>
+          <!-- пагинация для слайдера -->
+          <!--<div class="swiper-pagination"></div>-->
         </div>
       </main>
       <!-- секцция контакты и форма заполнения -->
@@ -182,12 +190,17 @@
                 placeholder="Ваш вопрос..."
               ></textarea>
               <div class="section__items">
-                <div class="section__block-data">
-                  <input type="checkbox" id="checkbox" />
+                <label class="section__block-data">
+                  <input
+                    type="checkbox"
+                    id="checkbox"
+                    class="section__real-checkbox"
+                  />
+                  <span class="section__custom-checkbox"></span>
                   <p class="section__text-checkbox">
                     Даю согласие на обработку персональных данных
                   </p>
-                </div>
+                </label>
                 <button class="section__button _btn" type="submit">
                   Отправить
                 </button>

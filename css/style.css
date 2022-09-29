@@ -437,20 +437,65 @@ html {
 .main .food {
   background-color: #ead1d0;
   padding: 32px 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 60px;
+  min-width: 0;
 }
 
-.main .food__adults {
+@media (max-width: 991.98px) {
+  .main .food {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .main .food {
+    padding: 22px 30px;
+  }
+}
+
+.main .food__titles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .food__title-adults, .main .food__title-pupies {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 200%;
+  text-transform: uppercase;
+  color: #000000;
+  text-align: center;
+}
+
+.main .food__adults, .main .food__puppies {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 75px;
 }
 
-.main .food__puppies {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 75px;
+@media (max-width: 1140px) {
+  .main .food__adults, .main .food__puppies {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    row-gap: 0;
+    padding-left: 60px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .main .food__adults, .main .food__puppies {
+    padding-left: 30px;
+  }
 }
 
 .main .food__title {
@@ -470,6 +515,12 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media (max-width: 1140px) {
+  .main .food__items-left {
+    display: block;
+  }
 }
 
 .main .food__item {
@@ -595,6 +646,18 @@ html {
   padding: 60px 0;
 }
 
+@media (max-width: 1140px) {
+  .section__contacts {
+    padding: 40px 0 10px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .section__contacts {
+    padding: 30px 0 10px;
+  }
+}
+
 .section__forms {
   padding: 80px 0;
 }
@@ -637,6 +700,14 @@ html {
   gap: 24px;
 }
 
+@media (max-width: 767.98px) {
+  .section__input-block {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 5px;
+  }
+}
+
 .section__input {
   width: 100%;
   padding: 22px 15px 6px;
@@ -666,6 +737,14 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  gap: 10px;
+}
+
+@media (max-width: 767.98px) {
+  .section__items {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .section__block-data {
@@ -684,12 +763,16 @@ html {
   max-width: 230px;
 }
 
+@media (max-width: 767.98px) {
+  .section__text-checkbox {
+    max-width: 100%;
+  }
+}
+
 .section__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   background: #fff4f3;
   color: #ec7973;
+  text-align: center;
 }
 
 .section__button:hover {
@@ -697,11 +780,16 @@ html {
   color: #ffffff;
 }
 
+@media (max-width: 767.98px) {
+  .section__button {
+    width: 100%;
+  }
+}
+
 .contact {
   font-family: "Montserrat";
   font-style: normal;
   color: #ffffff;
-  max-width: 310px;
 }
 
 @media (max-width: 1140px) {
@@ -812,6 +900,54 @@ html {
       align-self: start;
 }
 
+.section__real-checkbox {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.section__real-checkbox:focus + .section__real-checkbox__custom-checkbox {
+  -webkit-box-shadow: 0px 0px 0px 1px #961914, 0px 0px 10px #961914;
+          box-shadow: 0px 0px 0px 1px #961914, 0px 0px 10px #961914;
+}
+
+.section__custom-checkbox {
+  display: inline-block;
+  position: relative;
+  width: 16px;
+  height: 16px;
+  background: #ffffff;
+  border-radius: 2px;
+  margin-right: 5px;
+  vertical-align: sub;
+}
+
+.section__custom-checkbox::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 8px;
+  background: url("../img/social/check.svg") 0 0/contain no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: 1px;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+      -ms-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+  -webkit-transition: all 0.2s ease-in 0;
+  -o-transition: all 0.2s ease-in 0;
+  transition: all 0.2s ease-in 0;
+}
+
+.section__real-checkbox:checked + .section__custom-checkbox::before {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+      -ms-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+}
+
 .footer {
   background-color: #69120e;
   padding: 25px 0;
@@ -835,6 +971,7 @@ html {
   .footer__container {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    gap: 15px;
   }
 }
 

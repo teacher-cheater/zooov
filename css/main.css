@@ -121,20 +121,65 @@
 .main .food {
   background-color: #ead1d0;
   padding: 32px 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 60px;
+  min-width: 0;
 }
 
-.main .food__adults {
+@media (max-width: 991.98px) {
+  .main .food {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .main .food {
+    padding: 22px 30px;
+  }
+}
+
+.main .food__titles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .food__title-adults, .main .food__title-pupies {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 200%;
+  text-transform: uppercase;
+  color: #000000;
+  text-align: center;
+}
+
+.main .food__adults, .main .food__puppies {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 75px;
 }
 
-.main .food__puppies {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 75px;
+@media (max-width: 1140px) {
+  .main .food__adults, .main .food__puppies {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    row-gap: 0;
+    padding-left: 60px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .main .food__adults, .main .food__puppies {
+    padding-left: 30px;
+  }
 }
 
 .main .food__title {
@@ -154,6 +199,12 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media (max-width: 1140px) {
+  .main .food__items-left {
+    display: block;
+  }
 }
 
 .main .food__item {

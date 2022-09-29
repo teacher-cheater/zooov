@@ -108,18 +108,49 @@
   //------блок с наименованием позоций еды для собак----
   .food {
     // .food__adults
+
     background-color: #ead1d0;
     padding: 32px 80px;
-    //display: flex;
-    //justify-content: space-between;
-    &__adults {
-      display: flex;
-      gap: 75px;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+
+    min-width: 0;
+
+    @media (max-width: 991.98px) {
+      flex-wrap: wrap;
     }
-    // .food__puppies
+    @media (max-width: 767.98px) {
+      padding: 22px 30px;
+    }
+    &__titles {
+      display: flex;
+    }
+    &__title-adults,
+    &__title-pupies {
+      font-family: "Montserrat";
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 200%;
+      text-transform: uppercase;
+      color: #000000;
+      text-align: center;
+    }
+    &__adults,
     &__puppies {
       display: flex;
       gap: 75px;
+      @media (max-width: 1140px) {
+        flex-wrap: wrap;
+        row-gap: 0;
+        padding-left: 60px;
+      }
+      @media (max-width: 767.98px) {
+        padding-left: 30px;
+      }
+      //@media (max-width: 521.98px) {
+      //  padding-left: 60px;
+      //}
     }
 
     // .food__title
@@ -136,6 +167,9 @@
     &__items-left {
       display: flex;
       flex-direction: column;
+      @media (max-width: 1140px) {
+        display: block;
+      }
     }
     &__items-right {
     }

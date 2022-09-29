@@ -21,6 +21,18 @@
   padding: 60px 0;
 }
 
+@media (max-width: 1140px) {
+  .section__contacts {
+    padding: 40px 0 10px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .section__contacts {
+    padding: 30px 0 10px;
+  }
+}
+
 .section__forms {
   padding: 80px 0;
 }
@@ -63,6 +75,14 @@
   gap: 24px;
 }
 
+@media (max-width: 767.98px) {
+  .section__input-block {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 5px;
+  }
+}
+
 .section__input {
   width: 100%;
   padding: 22px 15px 6px;
@@ -92,6 +112,14 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  gap: 10px;
+}
+
+@media (max-width: 767.98px) {
+  .section__items {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .section__block-data {
@@ -110,12 +138,16 @@
   max-width: 230px;
 }
 
+@media (max-width: 767.98px) {
+  .section__text-checkbox {
+    max-width: 100%;
+  }
+}
+
 .section__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   background: #fff4f3;
   color: #ec7973;
+  text-align: center;
 }
 
 .section__button:hover {
@@ -123,11 +155,16 @@
   color: #ffffff;
 }
 
+@media (max-width: 767.98px) {
+  .section__button {
+    width: 100%;
+  }
+}
+
 .contact {
   font-family: "Montserrat";
   font-style: normal;
   color: #ffffff;
-  max-width: 310px;
 }
 
 @media (max-width: 1140px) {
