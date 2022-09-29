@@ -1130,6 +1130,9 @@ html {
 }
 
 .sets__title {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
   font-family: "Roboto";
   font-weight: 700;
   font-size: 40px;
@@ -1145,11 +1148,14 @@ html {
 
 @media (max-width: 767.98px) {
   .sets__title {
-    font-size: 26px;
+    font-size: 32px;
   }
 }
 
 .sets__subtitle {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
   font-family: "Montserrat";
   font-weight: 400;
   font-size: 16px;
@@ -1241,18 +1247,15 @@ html {
   margin-bottom: 15px;
 }
 
-.card-price {
-  background-color: #ead1d0;
-  padding: 35px 25px 265px 25px;
-}
-
 .card-price__block {
   position: relative;
+  background-color: #ead1d0;
+  padding: 35px 25px 260px 25px;
 }
 
 .card-price__apple {
   position: absolute;
-  bottom: -280px;
+  bottom: 20px;
   left: 20px;
   -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
       -ms-transform: matrix(-1, 0, 0, 1, 0, 0);
@@ -1266,7 +1269,7 @@ html {
 .card-price__meal {
   background: url("../img/decor/meal.png") 100% 0/contain no-repeat;
   position: absolute;
-  top: 250px;
+  top: 270px;
   left: 120px;
   width: 120px;
   height: 150px;
@@ -1279,7 +1282,7 @@ html {
 .card-price__line {
   background: url("../img/sets/line.svg") 100% 0/contain no-repeat;
   position: absolute;
-  top: 295px;
+  top: 320px;
   right: -200px;
   width: 320px;
   height: 250px;

@@ -17,6 +17,7 @@
 
   // .sets__title
   &__title {
+    flex: 1 1 50%;
     font-family: "Roboto";
     font-weight: 700;
     font-size: 40px;
@@ -28,12 +29,13 @@
       display: inline-block;
     }
     @media (max-width: 767.98px) {
-      font-size: 26px;
+      font-size: 32px;
     }
   }
 
   // .sets__subtitle
   &__subtitle {
+    flex: 1 1 50%;
     font-family: "Montserrat";
     font-weight: 400;
     font-size: 16px;
@@ -128,16 +130,16 @@
 }
 //--------
 .card-price {
-  background-color: #ead1d0;
-  padding: 35px 25px 265px 25px;
   // .card-price__block
   &__block {
     position: relative;
+    background-color: #ead1d0;
+    padding: 35px 25px 260px 25px;
   }
 
   &__apple {
     position: absolute;
-    bottom: -280px;
+    bottom: 20px;
     left: 20px;
     transform: matrix(-1, 0, 0, 1, 0, 0);
     background: url("../img/decor/apple.png") 0 0 / contain no-repeat;
@@ -149,7 +151,7 @@
   &__meal {
     background: url("../img/decor/meal.png") 100% 0 / contain no-repeat;
     position: absolute;
-    top: 250px;
+    top: 270px;
     left: 120px;
     width: 120px;
     height: 150px;
@@ -160,7 +162,7 @@
   &__line {
     background: url("../img/sets/line.svg") 100% 0 / contain no-repeat;
     position: absolute;
-    top: 295px;
+    top: 320px;
     right: -200px;
     width: 320px;
     height: 250px;
