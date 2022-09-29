@@ -28,8 +28,8 @@
     display: none;
     @media (max-width: 767.98px) {
       position: relative;
-      top: 30px;
-      right: 15px;
+      top: -10px;
+      right: 30px;
       display: block;
       width: 45px;
       height: 3.84px;
@@ -53,7 +53,7 @@
         position: absolute;
         background-color: #fff;
         width: 100%;
-        left: 0;
+        left: 0px;
         height: 3px;
         top: 9px;
         transition: all 0.3s ease 0s;

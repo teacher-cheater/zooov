@@ -52,6 +52,10 @@
   color: #ffffff;
 }
 
+.section__form {
+  max-width: 640px;
+}
+
 .section__input-block {
   display: -webkit-box;
   display: -ms-flexbox;

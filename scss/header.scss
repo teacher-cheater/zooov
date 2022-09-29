@@ -1,10 +1,7 @@
 .header {
   // .header__container
   background: url("../img/main-bg.jpg") center / cover no-repeat;
-  padding: 0 0 225px 0;
-  top: 0;
-  left: 0;
-  width: 100%;
+  padding: 225px 0;
   z-index: 5;
 
   &__container {
@@ -15,7 +12,10 @@
     flex-wrap: wrap;
     padding: 16px 0;
     justify-content: space-between;
-    margin-bottom: 128px;
+    top: 0;
+    width: 100%;
+    max-width: 1200px;
+    position: fixed;
   }
 
   // .header__logo

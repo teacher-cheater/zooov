@@ -17,6 +17,13 @@
   gap: 55px;
 }
 
+@media (max-width: 767.98px) {
+  .footer__container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .footer__text {
   display: -webkit-box;
   display: -ms-flexbox;

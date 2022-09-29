@@ -87,8 +87,8 @@ html {
 @media (max-width: 767.98px) {
   .menu__icon {
     position: relative;
-    top: 30px;
-    right: 15px;
+    top: -10px;
+    right: 30px;
     display: block;
     width: 45px;
     height: 3.84px;
@@ -112,7 +112,7 @@ html {
     position: absolute;
     background-color: #fff;
     width: 100%;
-    left: 0;
+    left: 0px;
     height: 3px;
     top: 9px;
     -webkit-transition: all 0.3s ease 0s;
@@ -155,10 +155,7 @@ html {
 
 .header {
   background: url("../img/main-bg.jpg") center/cover no-repeat;
-  padding: 0 0 225px 0;
-  top: 0;
-  left: 0;
-  width: 100%;
+  padding: 225px 0;
   z-index: 5;
 }
 
@@ -172,7 +169,10 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 128px;
+  top: 0;
+  width: 100%;
+  max-width: 1200px;
+  position: fixed;
 }
 
 .header__logo {
@@ -624,6 +624,10 @@ html {
   font-size: 16px;
   line-height: 140%;
   color: #ffffff;
+}
+
+.section__form {
+  max-width: 640px;
 }
 
 .section__input-block {
