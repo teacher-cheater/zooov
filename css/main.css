@@ -128,7 +128,6 @@
       -ms-flex-pack: center;
           justify-content: center;
   gap: 60px;
-  min-width: 0;
 }
 
 @media (max-width: 991.98px) {

@@ -208,6 +208,11 @@ html {
   }
 }
 
+.header__title span {
+  background: url("../img/decor/ellipse.svg") 280px 100%/contain no-repeat;
+  display: inline-block;
+}
+
 .header__subtitle {
   margin-bottom: 25px;
   font-family: "Montserrat";
@@ -444,7 +449,6 @@ html {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 60px;
-  min-width: 0;
 }
 
 @media (max-width: 991.98px) {
@@ -946,6 +950,131 @@ html {
   -webkit-transform: translate(-50%, -50%) scale(1);
       -ms-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
+}
+
+.header {
+  position: relative;
+}
+
+.section {
+  position: relative;
+}
+
+.decor__icon-1 {
+  background: url("../img/decor/smile-dog.svg") 0 0/contain no-repeat;
+  position: absolute;
+  top: 20%;
+  left: 45%;
+  width: 110px;
+  height: 110px;
+  -webkit-transform: rotate(12.2deg);
+      -ms-transform: rotate(12.2deg);
+          transform: rotate(12.2deg);
+}
+
+@media (max-width: 767.98px) {
+  .decor__icon-1 {
+    top: 14%;
+    left: 70%;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.decor__icon-2 {
+  background: url("../img/decor/meal.png") 0 0/contain no-repeat;
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  width: 110px;
+  height: 110px;
+  -webkit-transform: rotate(-12.2deg);
+      -ms-transform: rotate(-12.2deg);
+          transform: rotate(-12.2deg);
+}
+
+@media (max-width: 767.98px) {
+  .decor__icon-2 {
+    top: 25%;
+    left: 75%;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 399.98px) {
+  .decor__icon-2 {
+    top: 42%;
+  }
+}
+
+.decor__icon-3 {
+  background: url("../img/decor/apple.png") 0 0/contain no-repeat;
+  position: absolute;
+  bottom: 0%;
+  right: 1%;
+  width: 70px;
+  height: 70px;
+  z-index: 3;
+}
+
+@media (max-width: 767.98px) {
+  .decor__icon-3 {
+    width: 0px;
+    height: 0px;
+  }
+}
+
+.decor__icon-4 {
+  background: url("../img/decor/line-rigth-footer.svg") 0 0/contain no-repeat;
+  position: absolute;
+  top: 0%;
+  right: 0;
+  width: 100px;
+  height: 260px;
+  z-index: 3;
+  opacity: 0.8;
+}
+
+@media (max-width: 767.98px) {
+  .decor__icon-4 {
+    width: 80px;
+    height: 200px;
+  }
+}
+
+.decor__icon-5 {
+  background: url("../img/decor/line-footer.svg") 0 0/contain no-repeat;
+  position: absolute;
+  top: 20%;
+  left: 0;
+  width: 296px;
+  height: 353px;
+  z-index: 3;
+  opacity: 0.7;
+  -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.decor__icon-6 {
+  background: url("../img/decor/lines.svg") 0 0/contain no-repeat;
+  position: absolute;
+  top: 42%;
+  left: 44%;
+  width: 40px;
+  height: 50px;
+  z-index: 3;
+  -webkit-transform: rotate(5deg);
+      -ms-transform: rotate(5deg);
+          transform: rotate(5deg);
+}
+
+@media (max-width: 767.98px) {
+  .decor__icon-6 {
+    width: 0px;
+    height: 0px;
+  }
 }
 
 .footer {

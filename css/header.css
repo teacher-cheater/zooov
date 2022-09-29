@@ -53,6 +53,11 @@
   }
 }
 
+.header__title span {
+  background: url("../img/decor/ellipse.svg") 280px 100%/contain no-repeat;
+  display: inline-block;
+}
+
 .header__subtitle {
   margin-bottom: 25px;
   font-family: "Montserrat";
