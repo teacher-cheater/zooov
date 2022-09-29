@@ -36,3 +36,14 @@ if (menuLinks.length > 0) {
     }
   }
 }
+
+//header fixed/scroll
+window.onscroll = function showHeader() {
+  const header = document.querySelector('.header__top-block');
+
+  if (window.pageYOffset > 70) {
+    header.classList.add('header__fixed');
+  } else {
+    header.classList.remove('header__fixed');
+  }
+}

@@ -159,7 +159,7 @@ html {
   z-index: 5;
 }
 
-.header .header__top-block {
+.header__top-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -169,10 +169,10 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  top: 0;
   width: 100%;
   max-width: 1200px;
   position: fixed;
+  top: 0;
 }
 
 .header__logo {
@@ -300,6 +300,38 @@ html {
   .menu__link {
     font-size: 28px;
     color: #000;
+  }
+}
+
+.header__fixed {
+  position: fixed;
+  top: 0;
+  background-color: rgba(100, 96, 96, 0.5);
+  -webkit-animation-name: show__header;
+          animation-name: show__header;
+  -webkit-animation-duration: 0.7s;
+          animation-duration: 0.7s;
+}
+
+@-webkit-keyframes show__header {
+  0% {
+    opacity: 0;
+    top: -70px;
+  }
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+@keyframes show__header {
+  0% {
+    opacity: 0;
+    top: -70px;
+  }
+  100% {
+    opacity: 1;
+    top: 0;
   }
 }
 
@@ -1211,7 +1243,7 @@ html {
 
 .card-price {
   background-color: #ead1d0;
-  padding: 35px 25px 267px 25px;
+  padding: 35px 25px 265px 25px;
 }
 
 .card-price__block {

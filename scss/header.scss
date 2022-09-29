@@ -4,15 +4,15 @@
   padding: 225px 0;
   z-index: 5;
 
-  .header__top-block {
+  &__top-block {
     display: flex;
     flex-wrap: wrap;
     padding: 16px 15px;
     justify-content: space-between;
-    top: 0;
     width: 100%;
     max-width: 1200px;
     position: fixed;
+    top: 0;
   }
 
   // .header__logo
@@ -111,5 +111,27 @@
       font-size: 28px;
       color: #000;
     }
+  }
+}
+//--------------------------
+.header__fixed {
+  //
+  position: fixed;
+  top: 0;
+  //background-color: rgba(150, 25, 20, 0.5);
+  background-color: rgba(100, 96, 96, 0.5);
+
+  animation-name: show__header;
+  animation-duration: 0.7s;
+}
+//--------------------------
+@keyframes show__header {
+  0% {
+    opacity: 0;
+    top: -70px;
+  }
+  100% {
+    opacity: 1;
+    top: 0;
   }
 }
