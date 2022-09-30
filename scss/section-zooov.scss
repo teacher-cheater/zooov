@@ -1,0 +1,84 @@
+.section-zooov {
+  // .section-zooov__container
+  color: #000000;
+  padding: 70px 0;
+  margin-bottom: 40px;
+  &__container {
+    position: relative;
+  }
+  // .section-zooov__title
+  &__title {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 130%;
+    letter-spacing: 0.02em;
+    margin-bottom: 60px;
+    position: relative;
+    @media (max-width: 767.98px) {
+      font-size: 32px;
+    }
+    & span {
+      background: url("../img/decor/lines.svg") 0 100% / contain no-repeat;
+      bottom: 10px;
+      right: 5px;
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      z-index: 3;
+    }
+  }
+
+  // .section-zooov__content
+  &__content {
+    display: flex;
+    row-gap: 24px;
+    margin: 0 -12px;
+    flex-wrap: wrap;
+    &:not(:last-child) {
+      margin: 0 0 66px 0;
+    }
+  }
+}
+.zooov {
+  // .zooov__items
+
+  &__items {
+    padding: 0 12px;
+    flex: 1 1 25%;
+    min-width: 300px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  // .zooov__picture
+  &__picture {
+    margin-bottom: 15px;
+  }
+
+  // .zooov__subtitle
+  &__subtitle {
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 130%;
+    flex: 1 1 auto;
+  }
+
+  // .zooov__text
+  &__text {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+  }
+  &__decor-line {
+    background: url("../img/decor/long-line.svg") 0 100% / contain no-repeat;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: 236px;
+  }
+}
