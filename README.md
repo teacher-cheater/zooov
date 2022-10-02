@@ -8,7 +8,7 @@
 
 [Просмотреть онлайн](https://teacher-cheater.github.io/zooov/)
 
-Адаптивная верстка, меню-бургер, гугл-шрифт, семантические теги, препроцессор, JS, @keyframes.
+Адаптивная верстка, меню-бургер, гугл-шрифт, семантические теги, препроцессор, JS, @keyframes, кастомный чекбокс.
 
 ![2022-10-02_14-06-03](https://user-images.githubusercontent.com/85887160/193473118-e5f18c43-3c4f-4d74-b9c7-851cbdf4b257.png)
 ![2022-10-02_22-37-51](https://user-images.githubusercontent.com/85887160/193473124-c9cc1d1f-b934-4d9b-b214-17ba37f56048.png)
