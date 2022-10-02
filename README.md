@@ -10,5 +10,7 @@
 
 Адаптивная верстка, меню-бургер, гугл-шрифт, семантические теги, препроцессор, JS, @keyframes.
 
-
-
+![2022-10-02_14-06-03](https://user-images.githubusercontent.com/85887160/193473118-e5f18c43-3c4f-4d74-b9c7-851cbdf4b257.png)
+![2022-10-02_22-37-51](https://user-images.githubusercontent.com/85887160/193473124-c9cc1d1f-b934-4d9b-b214-17ba37f56048.png)
+![2022-10-02_22-39-34](https://user-images.githubusercontent.com/85887160/193473127-0be1fa02-c50e-40f8-8e34-df39c2ad11a3.png)
+![2022-10-02_22-40-27](https://user-images.githubusercontent.com/85887160/193473130-b862d7cb-53b8-4845-b403-f16504e0b38d.png)
