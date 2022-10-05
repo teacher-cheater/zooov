@@ -22,12 +22,12 @@
               <!--  -->
               <nav class="menu__body">
                 <ul class="menu__list">
-                  <li><a class="menu__link" href="#">BARF</a></li>
-                  <li><a class="menu__link" href="#">Рационы</a></li>
-                  <li><a class="menu__link" href="#">ZOOOV</a></li>
-                  <li><a class="menu__link" href="#">О нас</a></li>
-                  <li><a class="menu__link" href="#">Доставка</a></li>
-                  <li><a class="menu__link" href="#">FAQ</a></li>
+                  <li><a class="menu__link" href="#barf">BARF</a></li>
+                  <li><a class="menu__link" href="#ration">Рационы</a></li>
+                  <li><a class="menu__link" href="#zooov">ZOOOV</a></li>
+                  <li><a class="menu__link" href="#about">О нас</a></li>
+                  <li><a class="menu__link" href="#delivery">Доставка</a></li>
+                  <li><a class="menu__link" href="#faq">FAQ</a></li>
                 </ul>
               </nav>
             </div>
@@ -50,7 +50,7 @@
         </div>
       </header>
       <!-- main -->
-      <main class="main">
+      <main class="main" id="barf">
         <div class="main__container">
           <div class="main__content">
             <div class="main__content-left">
@@ -125,7 +125,7 @@
         </div>
       </main>
       <!-- секция пробных наборов еды -->
-      <section class="section-sets">
+      <section class="section-sets" id="ration">
         <div class="section-sets__container">
           <div class="section-sets__trial-sets sets">
             <div class="sets__headlines">
@@ -197,7 +197,7 @@
         </div>
       </section>
       <!-- Рационы ZOOOV -->
-      <section class="section-ration">
+      <section class="section-ration" id="delivery">
         <div class="section-ration__container">
           <div class="section-ration__top-content">
             <div class="section-ration__title">Рационы <span>ZOOOV</span></div>
@@ -232,11 +232,34 @@
                 </div>
                 <a href="#" class="ration__button _btn">Заказать</a>
               </div>
+              <!-- card ration -->
               <div class="ration__card">
                 <div class="ration__picture">
                   <img
                     class="ration__image"
-                    src="img/feeding/feeding-01.jpg"
+                    src="img/feeding/feeding-02.jpg"
+                    alt="image ration"
+                  />
+                </div>
+                <div class="ration__column">
+                  <div class="ration__title">Для щенков</div>
+                  <div class="ration__subtitle">Индейка/Говядина</div>
+                  <div class="ration__text">
+                    Подходит для ежедвеного кормления. Богат животными белками и
+                    Омега-3.
+                  </div>
+                  <div class="ration__data">
+                    700г / 500г / 300г / 150г / 100г
+                  </div>
+                </div>
+                <a href="#" class="ration__button _btn">Заказать</a>
+              </div>
+              <!-- card ration -->
+              <div class="ration__card">
+                <div class="ration__picture">
+                  <img
+                    class="ration__image"
+                    src="img/feeding/feeding-03.jpg"
                     alt="image ration"
                   />
                 </div>
@@ -253,16 +276,17 @@
                 </div>
                 <a href="#" class="ration__button _btn">Заказать</a>
               </div>
+              <!-- card ration -->
               <div class="ration__card">
                 <div class="ration__picture">
                   <img
                     class="ration__image"
-                    src="img/feeding/feeding-01.jpg"
+                    src="img/feeding/feeding-04.jpg"
                     alt="image ration"
                   />
                 </div>
                 <div class="ration__column">
-                  <div class="ration__title">Для взрослых собак</div>
+                  <div class="ration__title">Для щенков</div>
                   <div class="ration__subtitle">Индейка/Говядина</div>
                   <div class="ration__text">
                     Подходит для ежедвеного кормления. Богат животными белками и
@@ -274,33 +298,13 @@
                 </div>
                 <a href="#" class="ration__button _btn">Заказать</a>
               </div>
-              <div class="ration__card">
-                <div class="ration__picture">
-                  <img
-                    class="ration__image"
-                    src="img/feeding/feeding-01.jpg"
-                    alt="image ration"
-                  />
-                </div>
-                <div class="ration__column">
-                  <div class="ration__title">Для взрослых собак</div>
-                  <div class="ration__subtitle">Индейка/Говядина</div>
-                  <div class="ration__text">
-                    Подходит для ежедвеного кормления. Богат животными белками и
-                    Омега-3.
-                  </div>
-                  <div class="ration__data">
-                    700г / 500г / 300г / 150г / 100г
-                  </div>
-                </div>
-                <a href="#" class="ration__button _btn">Заказать</a>
-              </div>
+              <!--  -->
             </div>
           </div>
         </div>
       </section>
       <!-- section "Почему ZOOOV"-->
-      <section class="section-zooov">
+      <section class="section-zooov" id="zooov">
         <div class="section-zooov__container">
           <h2 class="section-zooov__title">Почему ZOOOV <span></span></h2>
           <!-- контент с блоками -->
@@ -352,7 +356,7 @@
         </div>
       </section>
       <!-- секцция контакты и форма заполнения -->
-      <section class="section">
+      <section class="section" id="about">
         <div class="section__container">
           <div class="section__contacts contact">
             <h2 class="contact__title">Контакты</h2>
@@ -446,7 +450,7 @@
         </div>
       </section>
       <!-- footer -->
-      <footer class="footer">
+      <footer class="footer" id="faq">
         <div class="footer__container">
           <p class="footer__text">
             ИП Коваленко Евгений Геннадьевич ИНН784215731801, адрес производства

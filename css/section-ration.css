@@ -73,9 +73,14 @@
   height: 100%;
 }
 
+.ration__picture {
+  margin-bottom: 45px;
+}
+
 @media (max-width: 991.98px) {
   .ration__picture {
     width: 100%;
+    margin-bottom: 30px;
   }
 }
 

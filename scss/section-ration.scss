@@ -15,7 +15,6 @@
   }
 
   // .section-ration__title
-
   &__title {
     flex: 1 1 40%;
     font-family: "Roboto";
@@ -34,22 +33,15 @@
   }
 
   // .section-ration__sub-title
-
   &__sub-title {
     flex: 1 1 60%;
     font-weight: 400;
     font-size: 16px;
     line-height: 140%;
   }
-
-  // .section-ration__bot-content
-
-  &__bot-content {
-  }
 }
 .ration {
   // .ration__content
-
   &__content {
     display: flex;
     row-gap: 24px;
@@ -58,7 +50,6 @@
   }
 
   // .ration__items
-
   &__card {
     padding: 0 12px;
     flex: 1 1 25%;
@@ -67,24 +58,21 @@
   }
 
   // .ration__picture
-
   &__picture {
+    margin-bottom: 45px;
     @media (max-width: 991.98px) {
       width: 100%;
+      margin-bottom: 30px;
     }
   }
+
   &__image {
     @media (max-width: 991.98px) {
       width: 100%;
     }
   }
-  // .ration__column
-
-  &__column {
-  }
 
   // .ration__title
-
   &__title {
     font-family: "Montserrat";
     font-weight: 700;
@@ -93,7 +81,6 @@
   }
 
   // .ration__subtitle
-
   &__subtitle {
     font-family: "Montserrat";
     font-weight: 400;
@@ -104,7 +91,6 @@
   }
 
   // .ration__text
-
   &__text {
     font-family: "Montserrat";
     font-weight: 400;
@@ -114,7 +100,6 @@
   }
 
   // .ration__data
-
   &__data {
     font-family: "Montserrat";
     font-weight: 400;
@@ -125,7 +110,6 @@
   }
 
   // .ration__button
-
   &__button {
     color: #961914;
     background-color: #fff;
