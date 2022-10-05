@@ -741,6 +741,7 @@ html {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     gap: 5px;
+    margin-bottom: 10px;
   }
 }
 
@@ -761,7 +762,7 @@ html {
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 8px;
-  margin-bottom: 22px;
+  margin-bottom: 30px;
   color: #ffffff;
   font-size: 24px;
 }
@@ -788,6 +789,7 @@ html {
   display: -ms-flexbox;
   display: flex;
   gap: 10px;
+  margin-bottom: 10px;
 }
 
 .section__text-checkbox {
@@ -1393,6 +1395,137 @@ html {
   width: 100%;
   height: 236px;
   opacity: 0.5;
+}
+
+.section-ration {
+  color: #000000;
+  padding: 70px 0;
+  margin-bottom: 40px;
+}
+
+.section-ration__top-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 767.98px) {
+  .section-ration__top-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.section-ration__title {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40%;
+          flex: 1 1 40%;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 130%;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+
+.section-ration__title span {
+  background: url("../img/sets/ellipse.png") 0 100%/contain no-repeat;
+  display: inline-block;
+}
+
+@media (max-width: 767.98px) {
+  .section-ration__title {
+    font-size: 32px;
+  }
+}
+
+.section-ration__sub-title {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 60%;
+          flex: 1 1 60%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+.ration__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  row-gap: 24px;
+  margin: 0 -12px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.ration__card {
+  padding: 0 12px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 25%;
+          flex: 1 1 25%;
+  min-width: 300px;
+  height: 100%;
+}
+
+@media (max-width: 991.98px) {
+  .ration__picture {
+    width: 100%;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .ration__image {
+    width: 100%;
+  }
+}
+
+.ration__title {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 130%;
+}
+
+.ration__subtitle {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 130%;
+  color: #9f9e9d;
+  margin-bottom: 15px;
+}
+
+.ration__text {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: #434242;
+}
+
+.ration__data {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 130%;
+  color: #9f9e9d;
+  margin-bottom: 11px;
+}
+
+.ration__button {
+  color: #961914;
+  background-color: #fff;
+  border: 1px solid #961914;
+}
+
+.ration__button:hover {
+  background-color: #ead1d0;
+  color: #961914;
 }
 
 .footer {

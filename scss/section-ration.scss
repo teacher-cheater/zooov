@@ -1,0 +1,138 @@
+.section-ration {
+  color: #000000;
+  padding: 70px 0;
+  margin-bottom: 40px;
+  // .section-ration__top-content
+
+  &__top-content {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+    @media (max-width: 767.98px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  // .section-ration__title
+
+  &__title {
+    flex: 1 1 40%;
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 130%;
+    letter-spacing: 0.02em;
+    color: #000000;
+    & span {
+      background: url("../img/sets/ellipse.png") 0 100% / contain no-repeat;
+      display: inline-block;
+    }
+    @media (max-width: 767.98px) {
+      font-size: 32px;
+    }
+  }
+
+  // .section-ration__sub-title
+
+  &__sub-title {
+    flex: 1 1 60%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+  }
+
+  // .section-ration__bot-content
+
+  &__bot-content {
+  }
+}
+.ration {
+  // .ration__content
+
+  &__content {
+    display: flex;
+    row-gap: 24px;
+    margin: 0 -12px;
+    flex-wrap: wrap;
+  }
+
+  // .ration__items
+
+  &__card {
+    padding: 0 12px;
+    flex: 1 1 25%;
+    min-width: 300px;
+    height: 100%;
+  }
+
+  // .ration__picture
+
+  &__picture {
+    @media (max-width: 991.98px) {
+      width: 100%;
+    }
+  }
+  &__image {
+    @media (max-width: 991.98px) {
+      width: 100%;
+    }
+  }
+  // .ration__column
+
+  &__column {
+  }
+
+  // .ration__title
+
+  &__title {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 130%;
+  }
+
+  // .ration__subtitle
+
+  &__subtitle {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 130%;
+    color: #9f9e9d;
+    margin-bottom: 15px;
+  }
+
+  // .ration__text
+
+  &__text {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #434242;
+  }
+
+  // .ration__data
+
+  &__data {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 130%;
+    color: #9f9e9d;
+    margin-bottom: 11px;
+  }
+
+  // .ration__button
+
+  &__button {
+    color: #961914;
+    background-color: #fff;
+    border: 1px solid #961914;
+    &:hover {
+      background-color: #ead1d0;
+      color: #961914;
+    }
+  }
+}
