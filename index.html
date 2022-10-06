@@ -11,7 +11,7 @@
     <div class="wrapper">
       <!-- header -->
       <header class="header">
-        <div class="header__container">
+        <div class="header__content-head">
           <div class="header__top-block">
             <div class="header__logo">
               <a href="#"><img src="img/icons/logo.svg" alt="logo" /></a>
@@ -355,6 +355,61 @@
           <div class="zooov__decor-line"></div>
         </div>
       </section>
+      <!-- faq -->
+      <section class="section-faq">
+        <div class="section-faq__container">
+          <div class="section-faq__left-row">
+            <h2 class="section-faq__title">Частые вопросы</h2>
+          </div>
+          <div class="section-faq__right-row">
+            <ul class="section-faq__items">
+              <!--  -->
+              <li class="section-faq__question">
+                <span
+                  >Не опасны ли бактерии, которые находятся в сыром мясе?</span
+                >
+                <span class="section-faq__line"></span>
+              </li>
+              <!--  -->
+              <li class="section-faq__question">
+                <span
+                  >Надо ли давать дополнительно витамины к рациону BARF?</span
+                >
+                <span class="section-faq__line"></span>
+              </li>
+              <!--  -->
+              <li class="section-faq__question">
+                <span
+                  >А если моя собака уже давно питается промышленным кормом и у
+                  нее нет проблем со здоровьем?</span
+                >
+                <span class="section-faq__line"></span>
+              </li>
+              <!--  -->
+              <li class="section-faq__question">
+                <span
+                  >Можно ли смешивать натуральный корм и корм промышленного
+                  производства?</span
+                >
+                <span class="section-faq__line"></span>
+              </li>
+              <!--  -->
+              <li class="section-faq__question">
+                <span
+                  >Могу ли я сам составить для своей собаки рацион по системе
+                  BARF?</span
+                >
+                <span class="section-faq__line"></span>
+              </li>
+              <!--  -->
+              <li class="section-faq__question">
+                <span>Присутствует ли в ZOOOV рационах рыба?</span>
+                <span class="section-faq__line"></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
       <!-- секцция контакты и форма заполнения -->
       <section class="section" id="about">
         <div class="section__container">
@@ -449,6 +504,7 @@
           <div class="decor__icon-6"></div>
         </div>
       </section>
+
       <!-- footer -->
       <footer class="footer" id="faq">
         <div class="footer__container">
@@ -460,7 +516,38 @@
           <p class="footer__text">Политика конфеденциальности</p>
         </div>
       </footer>
-      <script src="./js/app.js"></script>
     </div>
+    <!-- pop-up -->
+    <div id="popup" class="popup">
+      <div class="popup__body">
+        <div class="popup__content ration">
+          <!-- link close -->
+          <a href="#" class="popup__close close-popup"></a>
+          <!-- ? popup -->
+          <div class="ration__card popup-link">
+            <div class="ration__picture">
+              <img
+                class="ration__image"
+                src="img/feeding/feeding-01.jpg"
+                alt="image ration"
+              />
+            </div>
+            <div class="ration__column">
+              <div class="ration__title">Для взрослых собак</div>
+              <div class="ration__subtitle">Индейка/Говядина</div>
+              <div class="ration__text">
+                Подходит для ежедвеного кормления. Богат животными белками и
+                Омега-3.
+              </div>
+              <div class="ration__data">700г / 500г / 300г / 150г / 100г</div>
+            </div>
+            <a href="#" class="ration__button _btn">Заказать</a>
+          </div>
+          <!-- ? -->
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    <script src="./js/app.js"></script>
   </body>
 </html>

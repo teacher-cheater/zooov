@@ -47,3 +47,81 @@ window.onscroll = function showHeader() {
     header.classList.remove('header__fixed');
   }
 }
+
+//popup
+const popupLinks = document.querySelectorAll('.popup-link');
+const body = document.querySelector('body');
+const lockPadding = document.querySelectorAll('.lock-padding');
+
+const unlock = true;
+
+const timeout = 800;
+
+if (popupLinks.length > 0) {
+  for (const popupLink of popupLinks) {
+    popupLink.addEventListener('click', (e) => {
+      const popupName = popupLink.getAttribute('href').replace('#', '');
+      const currentPopup = document.getElementById(popupName);
+      popupOpen(currentPopup);
+      e.preventDefault();
+    });
+  }
+}
+
+const popupCloseIcon = document.querySelectorAll('.close-popup');
+if (popupCloseIcon.length > 0) {
+  const element = popupCloseIcon[i];
+  element.addEventListener('click', (e) => {
+    popupCloseIcon(element.closest('.popup'));
+    e.preventDefault();
+  })
+}
+
+function popupOpen(currentPopup) {
+  if (currentPopup && unlock) {
+    const popupActive = document.querySelector('.popup.open');
+    if (popupActive) {
+      popupCloseIcon(popupActive, false);
+    } else {
+      bodyLock();
+    }
+    currentPopup.classList.add('open');
+    currentPopup.addEventListener('click', (e) => {
+      if (!e.target.closest('.popup__content')) {
+        popupCloseIcon(e.target.closest('.popup'));
+      }
+    })
+  }
+}
+function popupClose(popupActive, doUnlock = true) {
+  if (unlock) {
+    popupActive.classList.remove('open');
+    if (doUnlock) {
+      bodyLock()
+    }
+  }
+}
+function bodyLock() {
+  const lockPaddingValue = `${window.innerWidth - document.querySelector('.wrapper').offsetWidth}px`
+
+  for (const el of lockPadding) {
+    el.style.paddingRight = lockPaddingValue;
+  }
+  body.style.paddingRight = lockPaddingValue;
+  body.classList.add('lock');
+
+  unlock = false;
+  setTimeout(() => {
+    unlock = true;
+  }, timeout)
+}
+
+function bodyUnlock() {
+  setTimeout(() => {
+    for (const el of lockPadding) {
+      el.style.paddingRight = '0px';
+    }
+    body.style.paddingRight = '0px';
+
+  })
+}

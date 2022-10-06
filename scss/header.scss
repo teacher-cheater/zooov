@@ -1,9 +1,11 @@
 .header {
-  // .header__container
   background: url("../img/main-bg.jpg") center / cover no-repeat;
   padding: 225px 0;
   z-index: 5;
-
+  &__content-head {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
   &__top-block {
     display: flex;
     flex-wrap: wrap;
@@ -28,6 +30,7 @@
   // .header__bottom-block
   &__bottom-block {
     max-width: 460px;
+    padding: 0 15px;
   }
 
   // .header__title
