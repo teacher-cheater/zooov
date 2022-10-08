@@ -1,6 +1,7 @@
 .section-faq {
   background-color: #fff4f3;
   padding: 70px 0;
+
   // .section-faq__container
   &__container {
     display: flex;
@@ -10,13 +11,11 @@
   }
 
   // .section-faq__left-row
-
   &__left-row {
     flex: 1 1 30%;
   }
 
   // .section-faq__title
-
   &__title {
     font-family: "Roboto";
     font-weight: 700;
@@ -31,54 +30,96 @@
   }
 
   // .section-faq__right-row
-
   &__right-row {
     flex: 1 1 70%;
   }
 
-  // .section-faq__items
-
   &__items {
+    position: relative;
   }
 
   // .section-faq__question
-
   &__question {
     display: flex;
-    align-self: center;
+    position: relative;
     justify-content: space-between;
     font-family: "Montserrat";
     font-weight: 600;
     font-size: 18px;
     line-height: 140%;
     color: #000000;
-    gap: 20px;
+    gap: 30px;
+    max-width: 80%;
+    cursor: pointer;
     &:not(:last-child) {
-      margin-bottom: 60px;
+      margin-bottom: 10px;
       @media (max-width: 767.98px) {
-        margin-bottom: 35px;
+        margin-bottom: 7px;
       }
     }
   }
-  // .section-faq__line
 
+  // .section-faq__line
   &__line {
-    width: 3px;
-    height: 20px;
-    background: #961914;
-    border-radius: 2px;
-    align-self: center;
-    &::before {
+    width: 20px;
+    height: 3px;
+    border-radius: 3px;
+    top: 50%;
+    right: -130px;
+    background-color: #961914;
+    position: absolute;
+    &::after {
       content: "";
-      top: 0;
-      left: 0;
-      width: 3px;
-      height: 20px;
-      background: #961914;
-      border-radius: 2px;
-      position: relative;
-      display: flex;
-      rotate: (90deg);
+      width: 20px;
+      height: 3px;
+      border-radius: 3px;
+      top: 50%;
+      right: 0px;
+      background-color: #961914;
+      position: absolute;
+      font-size: 40px;
+      transform: rotate(90deg);
+    }
+    @media (max-width: 991.98px) {
+      right: -50px;
+    }
+    @media (max-width: 767.98px) {
+      right: -35px;
     }
   }
+
+  // .section-faq__sub-item
+  &__sub-item {
+    max-height: 0;
+    overflow: hidden;
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #434242;
+    position: relative;
+    left: 0;
+    top: 10px;
+    transition: 0.4s;
+    margin-bottom: 20px;
+  }
+
+  // .section-faq__sub-question
+  &__sub-question {
+    max-width: 80%;
+  }
+}
+//открытый плюс вопроса faq
+.section-faq__question.active-line .section-faq__line::after {
+  content: "";
+  width: 20px;
+  height: 3px;
+  border-radius: 3px;
+  top: 50%;
+  right: 0px;
+  background-color: #961914;
+  position: absolute;
+  font-size: 40px;
+  transition: 0.4s;
+  transform: rotate(0deg);
 }
