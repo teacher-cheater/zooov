@@ -77,6 +77,15 @@
   margin-bottom: 45px;
 }
 
+.ration__picture:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.4s ease-in 0s;
+  -o-transition: all 0.4s ease-in 0s;
+  transition: all 0.4s ease-in 0s;
+}
+
 @media (max-width: 991.98px) {
   .ration__picture {
     width: 100%;

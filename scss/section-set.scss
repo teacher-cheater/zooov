@@ -66,6 +66,10 @@
   // .sets__picture
   &__picture {
     margin-bottom: 24px;
+    &:hover {
+      transform: scale(1.1);
+      transition: all 0.4s ease-in 0s;
+    }
   }
 
   // .sets__image
